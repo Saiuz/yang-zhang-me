@@ -1,0 +1,745 @@
+<html>
+<head>
+
+  <style type="text/css">
+    .social-icons li a { color: #323232 }
+    .social-icons li a:hover, .social-icons li a:focus { color: #DB522F } 
+    .list-inline>li{display:inline-block;padding-right:5px;padding-left:5px;}
+        
+    .noborderimage a, .noborderimage a:link, .noborderimage a:active, .noborderimage a:visited, .noborderimage a:hover  {
+      border: 0px;
+      text-decoration: none;
+      border-style: none;
+      }
+        
+.wikilink img, .wikilink a img {
+ border: 0;
+ border-style: none;
+ border: none;
+}
+
+.aboutme
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 17px;
+}
+
+.projectname
+{
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+	border-style: none;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.info
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.5em;
+	border-style: none;
+	font-weight: bold;
+	font-size: 15px;
+	color: #999;
+	line-height: 15px;
+}
+    
+
+   
+  </style>
+  
+  <title>Yang Zhang</title>
+  <meta name="author" content="Yang Zhang" />
+  <link rel="stylesheet" href="plain.css" type="text/css" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48610112-2', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+  
+<script src="lightbox/js/jquery-1.10.2.min.js"></script>
+<script src="lightbox/js/lightbox-2.6.min.js"></script>
+<link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
+
+
+<script type= "text/javascript">
+  function showMoreOrLess() {
+    if(document.getElementById("morePart").style.display == 'none'){
+      document.getElementById("morePart").style.display = ''
+      document.getElementById("showMoreLink").innerHTML = "&lt Hide";
+    }
+    else{
+      document.getElementById("morePart").style.display = 'none'
+      document.getElementById("showMoreLink").innerHTML = "More &gt";
+    }
+  }
+  
+  function loadSelector() {
+    document.querySelector("#showMoreLink").addEventListener("click", showMoreOrLess);
+  }
+  
+  window.addEventListener("load", loadSelector);
+</script>
+
+</head>
+
+
+<body>
+
+  
+  <div>
+  <div style="float: right; margin-top: -18px">
+    <ul class="list-inline social-icons">
+      <li><a href="https://github.com/yangz3"><span class="fa fa-github fa-2x"></span></a></li>
+      <li><a href="https://www.youtube.com/channel/UCqfGaBmZnIvKa5N9tgSQzcg"><span class="fa fa-youtube fa-2x"></span></a></li>
+      <li><a href="https://vimeo.com/user12991777/videos"><span class="fa fa-vimeo-square fa-2x"></span></a></li>
+      <li><a href="https://www.facebook.com/yang.zhang.3954"><span class="fa fa-facebook fa-2x"></span></a></li>
+      <li><a href="https://plus.google.com/108285385633092508381/posts"><span class="fa fa-google-plus fa-2x"></span></a></li>
+      <li><a href="http://www.linkedin.com/pub/yang-zhang/4a/464/21b"><span class="fa fa-linkedin fa-2x"></span></a></li>
+      <li><a href="mailto:yang.zhang@cs.cmu.edu"><span class="fa fa-envelope fa-2x"></span></a></li>
+    </ul>
+  </div>
+  
+<h1 class="title">Yang Zhang</h1></div>
+
+<a name="about"></a>
+<div id="about-me">
+<h2>About Me</h2>
+  <div style="float: right; text-align: center; margin-left: 45">
+	<a rel="lightbox" href = "image/picture_magic_baobao.png">
+    <img src="./image/mountainMe.jpg" alt="" width="180" height="180" border="0"/>
+	</a>
+
+</div>
+<p class="aboutme">
+  My name is Yang Zhang. I'm a 1st year PhD student at Human-Computer Interaction Institute (HCII), Carnegie Mellon University, advised by Prof. <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>. Broadly, I'm interested in inventing interaction technologies which can bridge the gaps between computing resources and people's daily lives in a natural and efficient way.
+  My interests fall into the research fields of tangible interfaces, wearable technology, ubiquitous computing, and sensor technology. I use this website to document my research, projects, and footprints. 
+ 
+</p>
+
+ <div style="float: right">
+ <a href="./CV_YangZhang.pdf"> CV/Resume></a>
+ </div>
+
+ 
+
+  <a name="research"></a></div
+><div id="research">
+<h2>Research</h2>
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+  
+    <img rel="lightbox" style="float: left; margin: 0 0 25px 0;" src="https://c1.staticflickr.com/1/587/22441643339_4ee7e1b97c.jpg" alt="" width="150" height="150" border="0" />
+
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Tomo: Wearable, Low-cost, Electrical Impedance Tomography for Hand Gesture Recognition</div>
+	
+	<div class="info">Yang Zhang, Chris Harrison (UIST 2015)</div>
+	
+    <p> Tomo recovers the interior impedance geometry of a user's arm by measuring the cross-sectional impedances from surface electrodes resting on the skin. We integrated the technology into a prototype wristband, which can classify gestures in real-time. Our approach is sufficiently compact and low-powered that we envision this technique being integrated into future smartwatches to allow hand gestures to work together with touchscreens.
+     <div style="float: right">
+     <a href="./paper/Tomo.pdf"> Paper></a> &nbsp &nbsp &nbsp <a href="https://www.youtube.com/watch?v=N9c4hINa2Bk"> Video></a>
+     </div>
+     
+    </p>
+  </td>
+</tr>
+</table>  
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+  
+    <img rel="lightbox" style="float: left; margin: 0 0 25px 0;" src="https://farm8.staticflickr.com/7535/15745719768_6f511362d8.jpg" alt="" width="150" height="150" border="0" />
+  </td>
+	  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Quantifying the Targeting Performance Benefit of Electrostatic Haptic Feedback on Touchscreens</div>
+	
+	<div class="info">Yang Zhang, Chris Harrison (ITS 2015)</div>
+	
+    <p>We quantitatively evaluate how electrostatic force feedback can be used to enhance, in particular targeting, where virtual objects rendered on touchscreens can offer tactile feedback. We conducted a Fitt's Law style user study and explored three haptic modalities: <i>No feedback</i>, <i>Physical</i>, and <i>Electrostatic</i>. The result shows that electrostatic haptic feedback can improve targeting speed by 7.5% compared to conventional flat touchscreens.
+     <div style="float: right">
+     <a href="./paper/ElectrostaticFitts.pdf"> Paper></a>
+     </div>
+     
+    </p>
+  </td>
+</tr>
+</table>	
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    <a  rel="lightbox[group4]" style="float: left; margin: 0 0 25px 0;" href="https://farm8.staticflickr.com/7457/12862854555_f510f2f950.jpg">
+      <img rel="lightbox" src="http://farm8.staticflickr.com/7403/12162849346_5d8b7597d3_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    <a rel="lightbox[group4]" href="https://farm3.staticflickr.com/2829/12162849366_832fa614a7.jpg"> </a>
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">CoPro: A Cooperative Tangible Programming Tool for Children</div>
+    <p>CoPro is a tangible programming tool with which children complete tasks collaboratively by arranging tangible tokens.
+    CoPro majorly consists of two parts: the CoPro Game and the tangible tokens. Cameras are adopted to capture block sequences in real time.
+    The system analyzes the program's semantic correctness and provides real-time feedback.
+    <div style="float: right">
+    <a href="http://vimeo.com/49660427"> Video></a>
+    </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    <a  rel="lightbox" style="float: left; margin: 0 0 25px 0;" href="https://farm4.staticflickr.com/3693/9318896375_6b63665cdc.jpg">
+      <img rel="lightbox" src="http://farm8.staticflickr.com/7316/12161811483_ec59bf3a24_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">TempoString: A Tangible Tool for Music Creation</div>
+	
+	<div class="info">Liang He, Guang Li, Yang Zhang, Danli Wang, Hongan Wang (UbiComp 2012)</div>
+	
+    <p>TempoString is an easy-to-use tool which assists children with music creation. To create music with TempoString, children first choose timbre by putting selected one on a pallete and then poke on the canvas to draw the watercolor spots.
+    During the play of the sound, children can interact with a rope to control the volume and the tone of it.
+
+    <div style="float: right">
+     <a href="./paper/TempoString.pdf"> Paper></a> &nbsp &nbsp &nbsp <a href="http://vimeo.com/47644545"> Video></a>
+    </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    <a  rel="lightbox[group5]" style="float: left; margin: 0 0 25px 0;" href="https://farm8.staticflickr.com/7385/9318791419_e055807858.jpg">
+      <img rel="lightbox" src="http://farm8.staticflickr.com/7404/12162235166_4043c27369_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    <a rel="lightbox[group5]" href="https://farm6.staticflickr.com/5337/9321568950_aa537b23be.jpg"> </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">E-Block: A Wireless/Infrared Tech Based Tangible Programming Tool for Children</div>
+	
+	<div class="info">Danli Wang, Yang Zhang, Tianyuan Gu, Liang He, Hongan Wang (UIST 2012)</div>
+	
+    <p>E-Block is a programming tool for children aged 5 to 9 which gives children a preliminary understanding of programming. Children write programs to play a maze game by placing the programming blocks in E-Block.
+    In the programming stage, children find a path for the character to escape the maze.
+    In the running stage, the character starts walking along the path programmed before.
+    This project was further developed into <a href= "./paper/TanPro-Kit.pdf">TanPro-Kit</a>.
+
+    <div style="float: right">
+     <a href="./paper/E-Block.pdf"> Paper></a> &nbsp &nbsp &nbsp <a href="http://vimeo.com/47644742"> Video></a>
+    </div>
+    </p>
+  </td>
+</tr>
+</table>
+
+<a name="projects"></a></div
+><div id="projects">
+<h2>Fun Projects</h2>
+
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+    <a name= "Metal Birds" rel="lightbox[group11]" style="float: left; margin: 0 0 25px 0;" href="https://farm1.staticflickr.com/457/19697429495_72cc5a0a15_z.jpg">
+      <img rel="lightbox" src="https://farm1.staticflickr.com/279/19511091600_1915c23316_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+     <a rel="lightbox[group11]" href="https://farm1.staticflickr.com/533/19671227416_e8397fda5f_z.jpg"> </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Metal Birds </div>
+    <p>While I was shopping at Construction Junction, I ran into a bunch of door pulls on sale. I got them back and made a sculpture. It took me 8 hours working at TechShop, grinding, sawing and welding. Real fun!
+    
+     <div style="float: right">
+     <a href="https://youtu.be/5Fge4-N5Avo"> Video></a>
+     </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+    <a name= "Plantie" rel="lightbox[group10]" style="float: left; margin: 0 0 25px 0;" href="https://farm4.staticflickr.com/3938/15078076793_60d567fcc7_c.jpg">
+      <img rel="lightbox" src="https://farm4.staticflickr.com/3956/15077484234_12cf143d79_m.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+     <a rel="lightbox[group10]" href="https://farm8.staticflickr.com/7534/15695626341_c7c96f6090_c.jpg"> </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Plantie: 1st Most Creative Award of UIST 2014 Student Innovation Contest </div>
+    <p>Plantie is a cute and interactive pot which walks your household plant around.
+    Powered by Kinoma Create and distributed sensors in the house, it has a couple of features contributing to the protection of your house privacy.
+    The idea behind this project is how we can make plants more of hosts of the family rather than merely decorations. We presented Plantie in UIST 2014 Student Innovation Contest and fortunately we finally was granted "1st Most Creative Award".
+    
+     <div style="float: right">
+     <a href="http://vimeo.com/110517949"> Video></a>
+     </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+    <a name= "Twitter_Light" rel="lightbox[group9]" style="float: left; margin: 0 0 25px 0;" href="https://farm6.staticflickr.com/5556/14809084170_9f9a85aef6_c.jpg">
+      <img rel="lightbox" src="https://farm6.staticflickr.com/5556/14809084170_9f9a85aef6_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+     
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Twitter Light: Internship Project at Kinoma, Marvell Semiconductor </div>
+    <p>This project happened during my internship at Kinoma Group, Marvell and is based on <a href= http://kinoma.com/create/> Kinoma Create</a>, a JavaScript-powered Internet of Things Construction Kit.
+    It is a LED matrix in the form of a world map to indicate the global tweet data. The Kinoma Create uses a socket to poll the tweet stream and shows tweets on the screen.
+    Geographical information and the current traffic load can be visualized by the brightnesses of the LEDs. The map presents data in a low res, but geographically accurate way. More info of this project can be found <a href= http://kinoma.com/create/projects/sparkle-motion/> here </a>.
+     <div style="float: right">
+     <a href="http://vimeo.com/104072436"> Video></a>
+     </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+
+    <img style="float: left; margin: 0 0 25px 0;" rel="lightbox" src="https://farm8.staticflickr.com/7461/15295433214_546be3f6c4_n.jpg" alt="" width="150" height="150" border="0" />
+
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">WikiTop10: a RESTful Wikipedia Data Analytics System </div>
+    <p> In this project, I developed a servlet which downloads Wikipedia docs as GZIPInputStream and parses it in real-time.
+  I also developed an IOS app to refresh the top 10 most popular articles of Wikipedia in real-time.
+  By browsing this app, users will be aware of the top 10 things people want to know the most. Not only will this app benefit to our knowledge database,
+  it can also prepare users for potential conversation topics.
+    
+     <div style="float: right">
+     <a href="http://youtu.be/H70mu4YS5oo"> Video></a>
+     </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+  <a name= "zipperSense" rel="lightbox[group8]" style="float: left; margin: 0 0 25px 0;" href="https://farm3.staticflickr.com/2907/13941258036_2624009263.jpg">
+    <img rel="lightbox" src="https://farm3.staticflickr.com/2907/13941258036_2624009263_q.jpg" alt="" width="150" height="150" border="0" />
+  </a>
+  <a rel="lightbox[group8]" href="https://farm4.staticflickr.com/3810/13658929153_960def6219_c.jpg"> </a>
+  <a rel="lightbox[group8]" href="https://farm3.staticflickr.com/2924/13553401143_0b259e3b59_c.jpg"> </a>
+  
+  
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">ZipperSense: Gadget Attached on Zippers for Gesture Detection</div>
+    <p>Zippers are ideal for input and can be use in an eye-free manner.
+    ZipperSense uses a microphone to collect sounds for gestures detection.
+    Gestures such as "V", "A", "W" and "M" by zipping up and down can be detected and used to control computational devices such as smartphones and computers.
+     <div style="float: right">
+
+     </div>
+     <div style="float: right">
+     <a href="http://vimeo.com/92578095"> Video></a>
+     </div>
+    </p>
+  </td>
+</tr>
+</table>
+
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+    <a name= "guitarGame" rel="lightbox[group7]" style="float: left; margin: 0 0 25px 0;" href="https://farm8.staticflickr.com/7347/12160862663_f2c3452ea2.jpg">
+      <img rel="lightbox" src="http://farm8.staticflickr.com/7347/12160862663_f2c3452ea2_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+     <a rel="lightbox[group7]" href="https://farm8.staticflickr.com/7217/13513238395_3ce3160977_c.jpg"> </a>
+      <a rel="lightbox[group7]" href="https://farm8.staticflickr.com/7368/13513240115_9eb751c109_c.jpg"> </a>
+       <a rel="lightbox[group7]" href="https://farm8.staticflickr.com/7133/13513242125_3c6c548d7a_c.jpg"> </a>
+       <a rel="lightbox[group7]" href="https://farm8.staticflickr.com/7383/13513236585_1ec80156eb_c.jpg"> </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Guitar Game</div>
+    <p>Music games are really popular these days. Yet few of them allow user upload their own music as the game music and no guitar game detect the direction of strums, which is a vital part of engagement. Therefore I built a tangible music game in which user can upload any music and the program will automatically generate the music game based on the signal processing of the audio information.
+     Laser pointer and photo resister are used as strings so that the direction of strums can be detected according to the order of laser being blocked. Copper foil functions as buttons. All other jobs are done by python programming.
+     <div style="float: right">
+     <a href="http://vimeo.com/81044715"> Video></a>
+     </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    <a name= "interactiveFish" rel="lightbox[group3]" style="float: left; margin: 0 0 25px 0;" href="https://farm3.staticflickr.com/2828/12162159464_761721b29e.jpg">
+      <img rel="lightbox" src="http://farm4.staticflickr.com/3709/12161928554_25ed358dbc_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    <a rel="lightbox[group3]" href="https://farm4.staticflickr.com/3731/11175217115_c8e50013fc_o.jpg"> </a>
+    <a rel="lightbox[group3]" href="https://farm4.staticflickr.com/3730/11175278774_12ab04b18a_o.jpg"> </a>
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Interactive Fish</div>
+    <p>In this project I'm trying to make an interactive drawing of Chinese water-color fish which can be projected on the celling. Fish are attracted by people's show up and follow the user's position.
+       Users disturb the fish by raising their arms.
+     <div style="float: right">
+     <a href="https://vimeo.com/80767585"> Video></a>
+     </div>
+    </p>
+  </td>
+</tr>
+</table>
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    <a  rel="lightbox[group2]" style="float: left; margin: 0 0 25px 0;" href="http://farm8.staticflickr.com/7433/12839814735_d981da86c1_o.jpg">
+      <img rel="lightbox" src="http://farm8.staticflickr.com/7409/12160887844_9cd92ea3a2_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    <a rel="lightbox[group2]" href="http://farm4.staticflickr.com/3794/12840091453_10183cb164.jpg"> </a>
+    <a rel="lightbox[group2]" href="http://farm4.staticflickr.com/3763/12839951385_56a10781a5_o.jpg"> </a>
+    <a rel="lightbox[group2]" href="http://farm3.staticflickr.com/2837/12840062863_d388b9358d_o.jpg"> </a>
+  
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">CNC Router Rocking Chair</div>
+    <p>In the first semester, I engaged myself into many fabrication processes. One of the fabrication-centric classes I attended taught us how to use CNC router to build stuffs. I was so excited and built myself a rocking chair.
+       Modeling and fabricated by myself, however, it is assembled by me and my friend. What I haven't imaged is that when we finished it, all my friends waited in line to try the chair. They were excited to try it and made jokes about it.
+       I really enjoyed to see my chair gathering people around and making them laughing.
+       <div style="float: right">
+ <a href="http://youtu.be/I_74lUWW4XY"> Video></a>
+ </div>
+    
+   </p>
+  </td>
+
+</tr>
+</table>
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+    <a  rel="lightbox" style="float: left; margin: 0 0 25px 0;" href="https://farm6.staticflickr.com/5537/12161989424_fb13e8d0f5_z.jpg">
+      <img rel="lightbox" src="http://farm6.staticflickr.com/5537/12161989424_fb13e8d0f5_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Whisker and Face</div>
+    <p>It's a mid-term project of Making Things Interactive class. In the exploration of materials, our device evolved from a paper-based mask to a solenoid-control silicon face.
+       When some one put their face close to the silicon face, it starts trembling. Then we get closer, it trembling harder and end up with a freeze with a expression of horror.
+      <div style="float: right">
+     <a href="http://vimeo.com/76547312"> Video></a>
+     </div>
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+     <a  rel="lightbox" style="float: left; margin: 0 0 25px 0;" href="https://farm4.staticflickr.com/3691/12161572955_6c9714a5cc.jpg">
+      <img rel="lightbox" src="http://farm4.staticflickr.com/3691/12161572955_6c9714a5cc_q.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Heart Beat</div>
+    <p>Heart, in many cultures, is a metaphor of feelings and emotions. In the project of "Heart Beat". We try to visualize the heart beat to create a new medium for people to communicate with others.
+    We realized two devices the one of which is a hand hold light which senses and visualizes beats by the power of red LEDs.
+    Another one is a wall full of paterns generated by the projector. If we put our hands on the wall, it starts to release ripples. We hope that by showing our heart beats we can augment the feeling of being together with others or create a feeling of being connected of people in distance.
+     <div style="float: right">
+     <a href="http://vimeo.com/79221655"> Video></a>
+     </div>
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    <a  rel="lightbox" style="float: left; margin: 0 0 25px 0;" href="https://farm6.staticflickr.com/5533/12756460334_c42f9e3171.jpg">
+      <img rel="lightbox" src="https://farm6.staticflickr.com/5533/12756460334_bab6a3de37_o.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">LED Jump Game</div>
+    <p>It's a small project for the class Gadgets, Sensors and Activity Recognition in HCI. Users should control the LED dot to jump higher by pressing the only button.
+       <div style="float: right">
+ <a href="https://vimeo.com/87513578"> Video></a>
+ </div>
+    
+    </p>
+  </td>
+
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+  <div><span><img style="float: left; margin: 0 0 25px 0;" src="http://farm3.staticflickr.com/2844/12161573255_4d7c423a3c_q.jpg"/></a></span></div>
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname">Remote Control Device of Indoor Lights</div>
+    <p> This device is designed for the remote control of indoor lights. To use it, we first attached the device on the surface of the switch of a light and then the light can be controlled by a remote controller.
+    When designing it, my main goal was to turn lights to be remote-controlled without any changes to them. It is convenient for people who know little about circuits. We realized this device with remote control chips and electromagnets.
+        <div style="float: right">
+    <a href="http://vimeo.com/47653988"> Video></a>
+    </div>
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<div id="cmu-classes">
+  <h2>CMU Classes</h2>
+  <ul>
+    <li>10-601 Machine Learning (spring 2016)&nbsp&nbsp&nbsp<a href = "http://yangz3.github.io">notes</a></li>
+    <li>15-410 Operating Systems (fall 2015)</li>   
+ </ul> 
+
+  <ul>
+    <li>M.S. Graduation Project (advised by Prof. <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>) (spring 2015)</li>
+    
+ </ul> 
+  <ul>
+    <li>15-619 Cloud Computing (fall 2014)</li>
+    <li>95-771 Data Structure and Algorithm  </li>
+    <li>05-689 Independent Study in HCI   </li>
+    <li>98-222 Introduction to iOS Development  </li>
+ </ul> 
+ <ul>   
+    <li>15-213 Introduction to Computer System (spring 2014)</li>
+    <li>67-103 Fundamentals of Web Design  </li>
+    <li>05-833 Gadgets, Sensors and Activity Recognition in HCI  </li>
+    <li>05-834 Applied Machine Learning  </li>
+  </ul> 
+  <ul>  
+    <li>15-112 Fundamentals of Programming and Computer Science (Python) (fall 2013)</li>
+    <li>24-780 Engineering Computation (C++)  </li>
+    <li>48-478 Digital Tooling  </li>
+    <li>48-739 Making Things Interactive  </li>
+  </ul>
+</div>
+
+<div id="footprint">
+  <h2>Footprint</h2>
+  <ul >
+  <li>April 13  UIST 2016 Paper submitted. Fly to St. Louis for weekends.</li>
+  <li>April 1  UIST 2016 in full swing. </li>
+  <li>Mar 23  Qualcomm Innovation Fellowship finalist presentation and demo. </li>
+  <li>Jan 26  Pittsburgh Penguins vs. New Jersey Devils. We won! </li>
+  <li>Jan 9  Got back to Pittsburgh. New semester started! </li>
+  <li>Dec 16  Filming for CHI project done. Flying back to Beijing.</li>
+  <li>Nov 30  CHI rebuttals submitted.</li>
+  <li>Nov 26  Host friends from high school over thanksgiving.</li>
+  <li>Nov 11  Reunion dinner with CoDelab friends. Wonderful UIST2015.</li>
+  <li>Nov 7  Heading for UIST 2015, Charlotte, NC. </li>
+  <li>Oct 28  Demo at Engedget, NYC. </li>
+  <li>Oct 26  Received a happy birthday suprise from the lab. </li>
+  <li>Sep 12  CHI 2016 projects final push. </li>
+  <li>Aug 31  First day as a PhD student. </li>
+  <li>Aug 23  Summer project user study began. </li>
+
+    <li>Aug 20  Tomo and Quantifying Electrostatic Haptic Feedback got accepted by UIST and ITS 2015. </li>
+    <li>Jun 3  Summer projects in full swing. </li>
+    <li>May 20  Tour at DC with family. </li>
+    <li>Apr 15  Party after UIST submission at Butter Joint. </li>
+    <li>Apr 7  UIST 2015 in full swing. </li>
+    <li>Mar 24  Make food storage in the lab for UIST late night work. </li>
+    <li>Mar 21  Had a wonderful visit at Cornell Tech NYC and Ithaca. </li>
+    <li>Feb 14  Extreme cold weather in St Louis. </li>
+    <li>Jan 21  User test for the Fitts Law Project. 10 down, 10 to go! </li>
+    <li>Jan 13  Back at Pittsburgh. </li>
+    <li>Jan 5  V1.0 bio-impedance meter board is sent for printing. </li>
+
+    <div id= "morePart" style= "display:none">
+      
+    <li>Dec 14  Went back home. Happy birthday mom! </li>
+    <li>Oct 9  ACM UIST conference Student Innovation Contest 1st Most Creative Award for our project!</li>
+    <li>Aug 22  Finished my internship at Kinoma, Marvell. </li>
+    <li>June 18  Won the first place in IoT Hackathon, evironment category. </li>
+    <li>May 29   The third day as intern. Developed an alarm using openweathermap and Google TTS API. </li>
+    <li>May 25   Arrive at Santa Clara for the summer intern. </li>
+	  <li>May 07   Final exam of 15213, done with high score. </li>
+	  <li>April 23   Final presentation of ZipperSense. </li>
+	  <li>April 18   Travel to Phily, play basketball with friends. </li>
+	  <li>April 04   V3.0 PCB board for the ZipperSense is sent for printing. </li>
+	  <li>March 07   V2.0 PCB board for the ZipperSense is sent for printing. </li>
+	  <li>February 21   V1.0 PCB board for the final project of gadget class is being printed. </li>
+	  <li>January 22   Turned an old cushion and a box into a stray cat's nest.</li>
+	  <li>January 20   30-minutes running, 1st day. The goal is to beats the number of days last semester.</li>
+	  <li>January 13   New semester begins. I'm so excited.</li>
+	  <li>January 11   Back to Pittsburgh.</li>
+	  <li>January 05   St Louis snow storm. Store food and water.</li>
+	  <li>January 01   Went to St Louis to spend the first day of the new year with my girl friend.</li>
+    
+   
+    <li>December 27   Went to The Grand Canyon which is truly grand.</li>
+    <li>December 24   Went to Las Vegas.</li>
+    <li>December 02   Successful presentation of 24780 C++ class's final project--"Interactive Fish"</li>
+    <li>November 28   Have a big Thanks-giving Turkey dinner in Jake's parents' house.</li>
+    <li>November 14   Paper and video finished for TEI. Everyday 1000-yards-swimming over 66 days!</li>
+    <li>November 05   Prototype1 of Heart Pulse is completed. Busy finishing the work for TEI conference.</li>
+    <li>October 21   Three final projects proposal. I'm really excited to get start.</li>
+    <li>Oct 9   Top-5 program in C++ class. Reward is bowling bowl game tickets!</li>
+    <li>Oct 6	Everyday 1000-yards-swimming, over 28 days.</li>
+    <li>Oct 1	Perform well in C++ python midterm. Finally make our silicon mask work with solenoids.</li>
+    <li>Sep 21	Everyday 1000-yards-swimming, over 13 days.</li>
+    <li>Sep 9	Visit Prof. Dale's house. Having fun.</li>
+    <li>Aug 30	First week in CMU. Cool! Now going to St. Louis for weekend</li>
+    <li>Aug 13	Orientation as new graduated student. End with a hugh BBQ!</li>
+    <li>Aug 8	Arrive at Pittsburg.</li>
+    <li>July 28	Bought one pair of hiking shoes.</li>
+    <li>July 21	Pack up stuff for studing abroad.</li>
+    <li>July 20	Send our pet dog to school.</li>
+    <li>July 19	Change domain name to "bennyzhang.me"</li>
+    <li>July 7	Return to Beijing.</li>
+    <li>July 2	Arrive at Liaoyuan.</li>
+    <li>June 27	Best barbecue I ever had. Also had the local spicy soup and noodle. Super spicy!</li>
+    <li>June 25	Depart from my dorm. Head for Changchun, my roommate's hometown.</li>
+    <li>June 15	Pack up my stuff. Only ten days to leave my Beihang University.</li>
+</div> 
+
+  </ul>
+  
+
+  
+    <div style="float: right">
+    <a id="showMoreLink" style="cursor: pointer"> More &gt </a>
+    </div>
+</div>
+
+
+<br>
+  <br>
+    <br>
+
+</body>
+</html>
+
