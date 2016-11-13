@@ -8,6 +8,7 @@
 	  
   	  <script src="lightbox/js/jquery-1.10.2.min.js"></script>
   	  <script src="lightbox/js/lightbox-2.6.min.js"></script>
+	  <script src="modernizr.js"></script>
   	  <link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
   
 	  <script>
@@ -19,6 +20,10 @@
 		  ga('create', 'UA-48610112-2', 'auto');
 		  ga('send', 'pageview');
 	  </script>
+		  
+
+		      
+		
   
 	<script type= "text/javascript">
 	  function showMoreOrLess() {
@@ -59,42 +64,71 @@
 <h1 class="title"> <a href = "http://yang-zhang.me" class="me" onMouseOver="this.style.color= '#DB522F'" onMouseOut="this.style.color= 'gray'">Yang Zhang</a></h1></div> 
 <div id="about-me">
 <h2>About Me</h2>
-  <div style="float: right; text-align: center; margin-left: 45">
-	<a rel="lightbox" href = "image/picture_magic_baobao.png">
-    <img src="./image/mountainMe.jpg" alt="" width="180" height="180" border="0"/>
-	</a>
 
-</div>
-<p class="aboutme">
-  My name is Yang Zhang. I'm a 2nd year PhD student at Human-Computer Interaction Institute (HCII), Carnegie Mellon University, advised by Prof. <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>. Broadly, I'm interested in inventing interaction technologies which can bridge the gaps between computing resources and people's daily lives in a natural and efficient way.
-  My interests fall into the research fields of tangible interfaces, wearable technology, ubiquitous computing, and sensor technology. 
-</p>
+<table width='900' border='0' cellpadding='0' cellspacing='0' >
+<tr valign="top">
+  <td width = "640px">
+  	<div>
+		<p class="aboutme">
+  My name is Yang Zhang. I'm a 2nd year PhD student at Human-Computer Interaction Institute (HCII), Carnegie Mellon University, advised by Prof. <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>. Broadly, I build interfaces which can bridge the gaps between computing resources and people's daily lives in a natural and efficient way. </p>
+  
+<p class="aboutme">My research interests fall into the research fields of sensing technology, wearables, and fabrications. My current research utilize on high frequency electricity to power a varity of sensing applications for smartwatches and fabrications. For more details of my research, please take a look at the follwing projects.</p>
+		
+	</div>
 
- <div style="float: right">
- <a href="./CV_YangZhang.pdf"> CV/Resume></a>
- </div>
+    <div style="float: right">
+    	<a href="./CV_YangZhang.pdf"> CV/Resume></a>
+    </div>
+  </td>
+  
+<td width = "60px">
+</td>
+  
+  <td>
+  	<div>
+		<a rel="lightbox" href = "image/picture_magic_baobao.png">
+    	<img src="./image/mountainMe.jpg" alt="" width="200" height="200" border="0"/>
+		</a>
+	</div>
+  </td>
+  
 
-  <a name="research"></a></div
-><div id="research">
+</tr>
+</table>
+
+
+<div id="research">
 <h2>Research</h2>
 
 <table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-  
-    <a href="./research/Tomo2/Tomo2.html" style="float: left; margin: 0 0 25px 0;border-bottom:none;"> <img  src="./research/Tomo2/thumbnail.jpg" alt="" width="150" height="150" border="0" /> </a>
-	
-	<video controls autoplay>
-	  <source src="movie.mp4" type="video/mp4">
+<tr valign="top">
+  <td width='270px'  valign='top'>
+	  <div>
+	<video id = "Tomo2" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
+</div>
 
+	<script>
+	if (Modernizr.video) {  
+	  // let's play some video! but what kind?
+	  if (Modernizr.video.webm) {
+		  $('#Tomo2').attr('src', './research/Tomo2/thumbnail.webm')
+	    // try WebM
+	  } else if (Modernizr.video.ogg) {
+	    // try Ogg Theora + Vorbis in an Ogg container
+	  } else if (Modernizr.video.h264){
+	    // try H.264 video + AAC audio in an MP4 container
+		  $('#Tomo2').attr('src', './research/Tomo2/thumbnail.mp4')
+	  }
+	}
+	</script>
+	
   </td>
   
-  <td width='700px'  valign='top'>
+  <td width = '20px'></td>
+  
+  <td width='700px'>
 
     <div class="projectname"> <a href="./research/Tomo2/Tomo2.html">
 		Advancing Hand Gesture Recognition with High Resolution Electrical Impedance Tomography</a> </div>
@@ -106,21 +140,41 @@
 </tr>
 </table> 
 
-<table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-  
-    <a href="./research/AuraSense/AuraSense.html" style="float: left; margin: 0 0 25px 0;border-bottom:none;"> <img  src="./research/AuraSense/thumbnail.jpg" alt="" width="150" height="150" border="0" /> </a>
+<div class = "dashbar"> </div>
 
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr valign="top">
+  <td width='270px'>
+	  <div>
+	<video id = "AuraSense" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	  Your browser does not support the video tag.
+	</video>
+</div>
+
+	<script>
+	if (Modernizr.video) {  
+	  // let's play some video! but what kind?
+	  if (Modernizr.video.webm) {
+		  $('#AuraSense').attr('src', './research/AuraSense/thumbnail.webm')
+	    // try WebM
+	  } else if (Modernizr.video.ogg) {
+	    // try Ogg Theora + Vorbis in an Ogg container
+	  } else if (Modernizr.video.h264){
+	    // try H.264 video + AAC audio in an MP4 container
+		  $('#AuraSense').attr('src', './research/AuraSense/thumbnail.mp4')
+	  }
+	}
+	</script>
+	
   </td>
+  
+  <td width = '20px'></td>
   
   <td width='700px'  valign='top'>
 
     <div class="projectname"> <a href="./research/AuraSense/AuraSense.html">
-		AuraSense: Enabling Expressive Around-Smartwatch Interactions with Electric Field Sensing</a> </div>
+		AuraSense: Enabling Expressive Around-Smartwatch Interactions with Electric Field Sensing</a> 	</div>
+	
 	<div class="info">Junhan Zhou, Yang Zhang, Gierad Laput, Chris Harrison (UIST 2016)</div>
 	
     <p> In AuraSense, we use Electric Field Sensing to support multiple interaction modalities for smartwatch. To explore how this sensing approach could enhance smartwatch interactions, we considered different antenna configurations and how they could enable useful interaction modalities. We identified four configurations that can support six well-known modalities of particular interest and utility, including gestures above the watchface and touchscreen-like finger tracking on the skin.
@@ -129,18 +183,38 @@
 </tr>
 </table> 
 
-<table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-  
-    <a href="./research/SkinTrack/SkinTrack.html" style="float: left; margin: 0 0 25px 0;border-bottom:none;"> <img  src="./research/SkinTrack/Thumbnail.jpg" alt="" width="150" height="150" border="0" /> </a>
+<div class = "dashbar"> </div>
 
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+
+<tr valign="top">
+  <td width='270px'>
+	  <div>
+	<video id = "SkinTrack" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	  Your browser does not support the video tag.
+	</video>
+</div>
+
+	<script>
+	if (Modernizr.video) {  
+	  // let's play some video! but what kind?
+	  if (Modernizr.video.webm) {
+		  $('#SkinTrack').attr('src', './research/SkinTrack/thumbnail.webm')
+	    // try WebM
+	  } else if (Modernizr.video.ogg) {
+	    // try Ogg Theora + Vorbis in an Ogg container
+	  } else if (Modernizr.video.h264){
+	    // try H.264 video + AAC audio in an MP4 container
+		  $('#SkinTrack').attr('src', './research/SkinTrack/thumbnail.mp4')
+	  }
+	}
+	</script>
+	
   </td>
   
-  <td width='700px'  valign='top'>
+  <td width = '20px'></td>
+  
+  <td width='700px'>
 
     <div class="projectname"> <a href="./research/SkinTrack/SkinTrack.html">
 		SkinTrack: Using the Body as an Electrical Waveguide for Continuous Finger Tracking on the Skin </a> </div>
@@ -152,20 +226,40 @@
 </tr>
 </table> 
 
-<table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-  
-    <a href="./research/tomo/tomo.html" style="float: left; margin: 0 0 25px 0; border-bottom:none;"><img  src="https://c1.staticflickr.com/1/587/22441643339_4ee7e1b97c.jpg" alt="" width="150" height="150" border="0" /> </a>
+<div class = "dashbar"> </div>
 
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+
+<tr valign="top">
+  <td width='270px'>
+	  <div>
+	<video id = "Tomo" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	  Your browser does not support the video tag.
+	</video>
+</div>
+
+	<script>
+	if (Modernizr.video) {  
+	  // let's play some video! but what kind?
+	  if (Modernizr.video.webm) {
+		  $('#Tomo').attr('src', './research/Tomo/thumbnail.webm')
+	    // try WebM
+	  } else if (Modernizr.video.ogg) {
+	    // try Ogg Theora + Vorbis in an Ogg container
+	  } else if (Modernizr.video.h264){
+	    // try H.264 video + AAC audio in an MP4 container
+		  $('#Tomo').attr('src', './research/Tomo/thumbnail.mp4')
+	  }
+	}
+	</script>
+	
   </td>
   
-  <td width='700px'  valign='top'>
+  <td width = '20px'></td>
+  
+  <td width='700px'>
 
-    <div class="projectname"> <a href="./research/tomo/tomo.html">
+    <div class="projectname"> <a href="./research/Tomo/tomo.html">
 		Tomo: Wearable, Low-cost, Electrical Impedance Tomography for Hand Gesture Recognition </a> </div>
 	<div class="info">Yang Zhang, Chris Harrison (UIST 2015)</div>
 	
@@ -173,20 +267,22 @@
     </p>
   </td>
 </tr>
-</table>  
-
+</table>
+</br>
+<div class = "dashbar"> </div>
 
 <table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-  
-    <a href="./research/quantifyEV/quantifyEV.html" style="float: left; margin: 0 0 25px 0; border-bottom:none;"><img  src="https://farm8.staticflickr.com/7535/15745719768_6f511362d8.jpg" alt="" width="150" height="150" border="0" /></a>
+
+<tr valign="top">
+  <td width='270px'>
+	  <div>
+	<img src = "./research/quantifyEV/Thumbnail.png" width = "260px"> </img>
+	</div>
   </td>
+  
+  <td width = '20px'></td>
 	  
-  <td width='700px'  valign='top'>
+  <td width='700px'>
     <div class="projectname"> <a href="./research/quantifyEV/quantifyEV.html">Quantifying the Targeting Performance Benefit of Electrostatic Haptic Feedback on Touchscreens</a></div>
 	
 	<div class="info">Yang Zhang, Chris Harrison (ITS 2015)</div>
@@ -197,42 +293,81 @@
 </tr>
 </table>	
 
+<div class = "dashbar"> </div>
+
 <table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-     <a style="float: left; margin: 0 0 25px 0; border-bottom:none;" href="./research/TempoString/TempoString.html">
-      <img src="http://farm8.staticflickr.com/7316/12161811483_ec59bf3a24_q.jpg" alt="" width="150" height="150" border="0" />
-    </a>
-    
+<tr valign="top">
+  <td width='270px'>
+	  <div>
+	<video id = "TempoString" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	  Your browser does not support the video tag.
+	</video>
+</div>
+
+	<script>
+	if (Modernizr.video) {  
+	  // let's play some video! but what kind?
+	  if (Modernizr.video.webm) {
+		  $('#TempoString').attr('src', './research/TempoString/thumbnail.webm')
+	    // try WebM
+	  } else if (Modernizr.video.ogg) {
+	    // try Ogg Theora + Vorbis in an Ogg container
+	  } else if (Modernizr.video.h264){
+	    // try H.264 video + AAC audio in an MP4 container
+		  $('#TempoString').attr('src', './research/TempoString/thumbnail.mp4')
+	  }
+	}
+	</script>
+	
   </td>
   
-  <td width='700px'  valign='top'>
+  <td width = '20px'></td>
+  
+  <td width='700px'>
     <div class="projectname"> <a href="./research/TempoString/TempoString.html"> TempoString: A Tangible Tool for Music Creation</a></div>
 	
 	<div class="info">Liang He, Guang Li, Yang Zhang, Danli Wang, Hongan Wang (UbiComp 2012)</div>
 	
-    <p>TempoString is an easy-to-use tool which assists children with music creation. To create music with TempoString, children first choose timbre by putting selected one on a pallete and then poke on the canvas to draw the watercolor spots.
-    During the play of the sound, children can interact with a rope to control the volume and the tone of it.
+    <p>TempoString is a tangible interface which assists children with music creation. With our system, creating music is just as easy as doodling on a canvas. A user first choose timbre by putting selected one on a pallete and then poke on the canvas to draw the watercolor spots.
+    During the play of the sound, children can interact with a rope to control the volume and the tone.
     </p>
+	
+</br></br>
   </td>
 </tr>
 </table>
 
+<div class = "dashbar"> </div>
+
 <table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-    <a style="float: left; margin: 0 0 25px 0; border-bottom:none;" href="./research/E-Block/E-Block.html">
-      <img src="http://farm8.staticflickr.com/7404/12162235166_4043c27369_q.jpg" alt="" width="150" height="150" border="0" />
-    </a>
+<tr valign="top">
+  <td width='270px'>
+	  <div>
+	<video id = "E-Block" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	  Your browser does not support the video tag.
+	</video>
+</div>
+
+	<script>
+	if (Modernizr.video) {  
+	  // let's play some video! but what kind?
+	  if (Modernizr.video.webm) {
+		  $('#E-Block').attr('src', './research/E-Block/thumbnail.webm')
+	    // try WebM
+	  } else if (Modernizr.video.ogg) {
+	    // try Ogg Theora + Vorbis in an Ogg container
+	  } else if (Modernizr.video.h264){
+	    // try H.264 video + AAC audio in an MP4 container
+		  $('#E-Block').attr('src', './research/E-Block/thumbnail.mp4')
+	  }
+	}
+	</script>
+	
   </td>
   
-  <td width='700px'  valign='top'>
+  <td width = '20px'></td>
+  
+  <td width='700px'>
     <div class="projectname"> <a href="./research/E-Block/E-Block.html">E-Block: A Wireless/Infrared Tech Based Tangible Programming Tool for Children</a></div>
 	
 	<div class="info">Danli Wang, Yang Zhang, Tianyuan Gu, Liang He, Hongan Wang (UIST 2012)</div>
