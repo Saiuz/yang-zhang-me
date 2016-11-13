@@ -11,7 +11,7 @@ body {
   background-color: white;
   color: black;
   font-family: MyriadProLight, arial, sans-serif;
-  font-size: 13pt;
+  font-size: 14pt;
   /*font-size: medium;*/
   line-height: 1.3em;
   color: #333;
@@ -48,8 +48,9 @@ src: local('?'), url('./fonts/myriadpro-semibold-webfont.woff') format('woff');
 }
 
 a {
-  color: #0000bb;
-  text-decoration: underline;
+  color:black;
+  text-decoration:none;
+  border-bottom: 1px dotted black;
 }
 /*a:visited {
   color: fuchsia;
@@ -67,7 +68,7 @@ tt {
   color: navy;
 }
 
-h1, h2, h3, h4, h5, h6, h1 a, h2 a {
+h1, h2, h3, h4, h5, h6, h1, h2 {
   font-size: 20pt;
   font-weight: normal;
   font-family: MyriadProSemibold, arial, sans-serif;
@@ -84,11 +85,13 @@ h1 {
   letter-spacing:  0px;
   font-size: 20pt;
 }
+
 h2 {
   border-bottom: 2px solid;
   padding-top: 0.5em;
   letter-spacing:  0px;
 }
+
 
 div.sectionbody {
   font-family: serif;
@@ -102,7 +105,7 @@ hr {
 p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 pre {
@@ -136,6 +139,12 @@ div#footer-text {
 div#footer-badges {
   float: right;
   padding-bottom: 0.5em;
+}
+
+.dashbar {
+    border-top: 1px dashed #bbbbbb;
+    margin-bottom: 35px;
+    margin-top: 00px;
 }
 
 div#preamble,
@@ -329,4 +338,51 @@ div#toc a:visited { color: blue; }
 
 .footer {
   font-size: smaller
+}
+
+.me {
+	color:gray;
+	text-decoration:none; 
+	border-bottom:none;
+	}
+
+.social-icons li a { color: #323232; border-bottom:none}
+
+.social-icons li a:hover, .social-icons li a:focus { color: #DB522F } 
+
+.list-inline>li{display:inline-block;padding-right:5px;padding-left:5px;}
+
+.noborderimage a, .noborderimage a:link, .noborderimage a:active, .noborderimage a:visited, .noborderimage a:hover  		{
+  border: 0px;
+  text-decoration: none;
+  border-style: none;
+  }
+
+
+.aboutme
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 17px;
+}
+
+.projectname
+{
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+	border-style: none;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.info
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.5em;
+	border-style: none;
+	font-weight: bold;
+	font-size: 15px;
+	color: #999;
+	line-height: 15px;
 }

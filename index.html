@@ -1,117 +1,62 @@
 <html>
-<head>
-
-  <style type="text/css">
-    .social-icons li a { color: #323232 }
-    .social-icons li a:hover, .social-icons li a:focus { color: #DB522F } 
-    .list-inline>li{display:inline-block;padding-right:5px;padding-left:5px;}
-        
-    .noborderimage a, .noborderimage a:link, .noborderimage a:active, .noborderimage a:visited, .noborderimage a:hover  {
-      border: 0px;
-      text-decoration: none;
-      border-style: none;
-      }
-        
-.wikilink img, .wikilink a img {
- border: 0;
- border-style: none;
- border: none;
-}
-
-.aboutme
-{
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 17px;
-}
-
-.projectname
-{
-	margin-top: 0.0em;
-	margin-bottom: 0.2em;
-	border-style: none;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 16px;
-}
-
-.info
-{
-	margin-top: 0.3em;
-	margin-bottom: 0.5em;
-	border-style: none;
-	font-weight: bold;
-	font-size: 15px;
-	color: #999;
-	line-height: 15px;
-}
-    
-
-   
-  </style>
+	<head>
   
-  <title>Yang Zhang</title>
-  <meta name="author" content="Yang Zhang" />
-  <link rel="stylesheet" href="plain.css" type="text/css" />
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+	  <title>Yang Zhang</title>
+	  <meta name="author" content="Yang Zhang" />
+	  <link rel="stylesheet" href="plain.css" type="text/css" />
+	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+	  
+  	  <script src="lightbox/js/jquery-1.10.2.min.js"></script>
+  	  <script src="lightbox/js/lightbox-2.6.min.js"></script>
+  	  <link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
   
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48610112-2', 'auto');
-  ga('send', 'pageview');
-
-  </script>
+		  ga('create', 'UA-48610112-2', 'auto');
+		  ga('send', 'pageview');
+	  </script>
   
-<script src="lightbox/js/jquery-1.10.2.min.js"></script>
-<script src="lightbox/js/lightbox-2.6.min.js"></script>
-<link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
-
-
-<script type= "text/javascript">
-  function showMoreOrLess() {
-    if(document.getElementById("morePart").style.display == 'none'){
-      document.getElementById("morePart").style.display = ''
-      document.getElementById("showMoreLink").innerHTML = "&lt Hide";
-    }
-    else{
-      document.getElementById("morePart").style.display = 'none'
-      document.getElementById("showMoreLink").innerHTML = "More &gt";
-    }
-  }
+	<script type= "text/javascript">
+	  function showMoreOrLess() {
+	    if(document.getElementById("morePart").style.display == 'none'){
+	      document.getElementById("morePart").style.display = ''
+	      document.getElementById("showMoreLink").innerHTML = "&lt Hide";
+	    }
+	    else{
+	      document.getElementById("morePart").style.display = 'none'
+	      document.getElementById("showMoreLink").innerHTML = "More &gt";
+	    }
+	  }
   
-  function loadSelector() {
-    document.querySelector("#showMoreLink").addEventListener("click", showMoreOrLess);
-  }
+	  function loadSelector() {
+	    document.querySelector("#showMoreLink").addEventListener("click", showMoreOrLess);
+	  }
   
-  window.addEventListener("load", loadSelector);
-</script>
+	  window.addEventListener("load", loadSelector);
+	</script>
 
-</head>
-
-
+	</head>
 <body>
 
   
-  <div>
+
   <div style="float: right; margin-top: -18px">
     <ul class="list-inline social-icons">
+	  <li><a href="https://scholar.google.com/citations?user=N6543cwAAAAJ&hl=en"><span class="fa fa-graduation-cap fa-2x"></span></a></li>
       <li><a href="https://github.com/yangz3"><span class="fa fa-github fa-2x"></span></a></li>
       <li><a href="https://www.youtube.com/channel/UCqfGaBmZnIvKa5N9tgSQzcg"><span class="fa fa-youtube fa-2x"></span></a></li>
-      <li><a href="https://vimeo.com/user12991777/videos"><span class="fa fa-vimeo-square fa-2x"></span></a></li>
+      <li><a href="https://vimeo.com/user12991777/videos"><span class="fa fa-vimeo fa-2x"></span></a></li>
       <li><a href="https://www.facebook.com/yang.zhang.3954"><span class="fa fa-facebook fa-2x"></span></a></li>
-      <li><a href="https://plus.google.com/108285385633092508381/posts"><span class="fa fa-google-plus fa-2x"></span></a></li>
       <li><a href="http://www.linkedin.com/pub/yang-zhang/4a/464/21b"><span class="fa fa-linkedin fa-2x"></span></a></li>
       <li><a href="mailto:yang.zhang@cs.cmu.edu"><span class="fa fa-envelope fa-2x"></span></a></li>
     </ul>
   </div>
   
-<h1 class="title">Yang Zhang</h1></div>
-
-<a name="about"></a>
+<h1 class="title"> <a href = "http://yang-zhang.me" class="me" onMouseOver="this.style.color= '#DB522F'" onMouseOut="this.style.color= 'gray'">Yang Zhang</a></h1></div> 
 <div id="about-me">
 <h2>About Me</h2>
   <div style="float: right; text-align: center; margin-left: 45">
@@ -121,16 +66,13 @@
 
 </div>
 <p class="aboutme">
-  My name is Yang Zhang. I'm a 1st year PhD student at Human-Computer Interaction Institute (HCII), Carnegie Mellon University, advised by Prof. <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>. Broadly, I'm interested in inventing interaction technologies which can bridge the gaps between computing resources and people's daily lives in a natural and efficient way.
-  My interests fall into the research fields of tangible interfaces, wearable technology, ubiquitous computing, and sensor technology. I use this website to document my research, projects, and footprints. 
- 
+  My name is Yang Zhang. I'm a 2nd year PhD student at Human-Computer Interaction Institute (HCII), Carnegie Mellon University, advised by Prof. <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>. Broadly, I'm interested in inventing interaction technologies which can bridge the gaps between computing resources and people's daily lives in a natural and efficient way.
+  My interests fall into the research fields of tangible interfaces, wearable technology, ubiquitous computing, and sensor technology. 
 </p>
 
  <div style="float: right">
  <a href="./CV_YangZhang.pdf"> CV/Resume></a>
  </div>
-
- 
 
   <a name="research"></a></div
 ><div id="research">
@@ -143,20 +85,91 @@
 <tr>
   <td width='170px'  valign='top'>
   
-    <img rel="lightbox" style="float: left; margin: 0 0 25px 0;" src="https://c1.staticflickr.com/1/587/22441643339_4ee7e1b97c.jpg" alt="" width="150" height="150" border="0" />
+    <a href="./research/Tomo2/Tomo2.html" style="float: left; margin: 0 0 25px 0;border-bottom:none;"> <img  src="./research/Tomo2/thumbnail.jpg" alt="" width="150" height="150" border="0" /> </a>
+	
+	<video controls autoplay>
+	  <source src="movie.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</video>
 
   </td>
   
   <td width='700px'  valign='top'>
-    <div class="projectname">Tomo: Wearable, Low-cost, Electrical Impedance Tomography for Hand Gesture Recognition</div>
+
+    <div class="projectname"> <a href="./research/Tomo2/Tomo2.html">
+		Advancing Hand Gesture Recognition with High Resolution Electrical Impedance Tomography</a> </div>
+	<div class="info">Yang Zhang, Robert Xiao, Chris Harrison (UIST 2016)</div>
 	
+    <p> Electrical Impedance Tomography (EIT) was recently employed in the HCI domain to detect hand gestures using an instrumented smartwatch. This prior work demonstrated great promise for non-invasive, high accuracy recognition of gestures for interactive control. We introduce a new system that offers improved sampling speed and resolution. In turn, this enables superior interior reconstruction and gesture recognition. More importantly, we use our new system as a vehicle for experimentation -- we compare two EIT sensing methods and three different electrode resolutions.
+    </p>
+  </td>
+</tr>
+</table> 
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+  
+    <a href="./research/AuraSense/AuraSense.html" style="float: left; margin: 0 0 25px 0;border-bottom:none;"> <img  src="./research/AuraSense/thumbnail.jpg" alt="" width="150" height="150" border="0" /> </a>
+
+  </td>
+  
+  <td width='700px'  valign='top'>
+
+    <div class="projectname"> <a href="./research/AuraSense/AuraSense.html">
+		AuraSense: Enabling Expressive Around-Smartwatch Interactions with Electric Field Sensing</a> </div>
+	<div class="info">Junhan Zhou, Yang Zhang, Gierad Laput, Chris Harrison (UIST 2016)</div>
+	
+    <p> In AuraSense, we use Electric Field Sensing to support multiple interaction modalities for smartwatch. To explore how this sensing approach could enhance smartwatch interactions, we considered different antenna configurations and how they could enable useful interaction modalities. We identified four configurations that can support six well-known modalities of particular interest and utility, including gestures above the watchface and touchscreen-like finger tracking on the skin.
+    </p>
+  </td>
+</tr>
+</table> 
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+  
+    <a href="./research/SkinTrack/SkinTrack.html" style="float: left; margin: 0 0 25px 0;border-bottom:none;"> <img  src="./research/SkinTrack/Thumbnail.jpg" alt="" width="150" height="150" border="0" /> </a>
+
+  </td>
+  
+  <td width='700px'  valign='top'>
+
+    <div class="projectname"> <a href="./research/SkinTrack/SkinTrack.html">
+		SkinTrack: Using the Body as an Electrical Waveguide for Continuous Finger Tracking on the Skin </a> </div>
+	<div class="info">Yang Zhang, Junhan Zhou, Gierad Laput, Chris Harrison (CHI 2016)</div>
+	
+    <p> SkinTrack is a wearable system that enables continuous touch tracking on the skin. It consists of a signal-emitting ring and a sensing wristband with multiple electrodes. Due to the phase delay inherent in a high-frequency AC signal propagating through the body, a phase difference can be observed between pairs of electrodes, which we use to compute a 2D finger touch coordinate. We envision the technology being integrated into future smartwatches, supporting rich touch interactions beyond the confines of the small touchscreen.
+    </p>
+  </td>
+</tr>
+</table> 
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+  
+    <a href="./research/tomo/tomo.html" style="float: left; margin: 0 0 25px 0; border-bottom:none;"><img  src="https://c1.staticflickr.com/1/587/22441643339_4ee7e1b97c.jpg" alt="" width="150" height="150" border="0" /> </a>
+
+  </td>
+  
+  <td width='700px'  valign='top'>
+
+    <div class="projectname"> <a href="./research/tomo/tomo.html">
+		Tomo: Wearable, Low-cost, Electrical Impedance Tomography for Hand Gesture Recognition </a> </div>
 	<div class="info">Yang Zhang, Chris Harrison (UIST 2015)</div>
 	
     <p> Tomo recovers the interior impedance geometry of a user's arm by measuring the cross-sectional impedances from surface electrodes resting on the skin. We integrated the technology into a prototype wristband, which can classify gestures in real-time. Our approach is sufficiently compact and low-powered that we envision this technique being integrated into future smartwatches to allow hand gestures to work together with touchscreens.
-     <div style="float: right">
-     <a href="./paper/Tomo.pdf"> Paper></a> &nbsp &nbsp &nbsp <a href="https://www.youtube.com/watch?v=N9c4hINa2Bk"> Video></a>
-     </div>
-     
     </p>
   </td>
 </tr>
@@ -170,75 +183,39 @@
 <tr>
   <td width='170px'  valign='top'>
   
-    <img rel="lightbox" style="float: left; margin: 0 0 25px 0;" src="https://farm8.staticflickr.com/7535/15745719768_6f511362d8.jpg" alt="" width="150" height="150" border="0" />
+    <a href="./research/quantifyEV/quantifyEV.html" style="float: left; margin: 0 0 25px 0; border-bottom:none;"><img  src="https://farm8.staticflickr.com/7535/15745719768_6f511362d8.jpg" alt="" width="150" height="150" border="0" /></a>
   </td>
 	  
   <td width='700px'  valign='top'>
-    <div class="projectname">Quantifying the Targeting Performance Benefit of Electrostatic Haptic Feedback on Touchscreens</div>
+    <div class="projectname"> <a href="./research/quantifyEV/quantifyEV.html">Quantifying the Targeting Performance Benefit of Electrostatic Haptic Feedback on Touchscreens</a></div>
 	
 	<div class="info">Yang Zhang, Chris Harrison (ITS 2015)</div>
 	
     <p>We quantitatively evaluate how electrostatic force feedback can be used to enhance, in particular targeting, where virtual objects rendered on touchscreens can offer tactile feedback. We conducted a Fitt's Law style user study and explored three haptic modalities: <i>No feedback</i>, <i>Physical</i>, and <i>Electrostatic</i>. The result shows that electrostatic haptic feedback can improve targeting speed by 7.5% compared to conventional flat touchscreens.
-     <div style="float: right">
-     <a href="./paper/ElectrostaticFitts.pdf"> Paper></a>
-     </div>
-     
     </p>
   </td>
 </tr>
 </table>	
 
-
 <table width='900px' border='0' cellpadding='0' cellspacing='0' >
 <tr>
   <td width='900px' colspan='3'  valign='top'></td>
 </tr>
 <tr>
   <td width='170px'  valign='top'>
-    <a  rel="lightbox[group4]" style="float: left; margin: 0 0 25px 0;" href="https://farm8.staticflickr.com/7457/12862854555_f510f2f950.jpg">
-      <img rel="lightbox" src="http://farm8.staticflickr.com/7403/12162849346_5d8b7597d3_q.jpg" alt="" width="150" height="150" border="0" />
-    </a>
-    <a rel="lightbox[group4]" href="https://farm3.staticflickr.com/2829/12162849366_832fa614a7.jpg"> </a>
-  </td>
-  
-  <td width='700px'  valign='top'>
-    <div class="projectname">CoPro: A Cooperative Tangible Programming Tool for Children</div>
-    <p>CoPro is a tangible programming tool with which children complete tasks collaboratively by arranging tangible tokens.
-    CoPro majorly consists of two parts: the CoPro Game and the tangible tokens. Cameras are adopted to capture block sequences in real time.
-    The system analyzes the program's semantic correctness and provides real-time feedback.
-    <div style="float: right">
-    <a href="http://vimeo.com/49660427"> Video></a>
-    </div>
-    
-    </p>
-  </td>
-</tr>
-</table>
-
-<table width='900px' border='0' cellpadding='0' cellspacing='0' >
-<tr>
-  <td width='900px' colspan='3'  valign='top'></td>
-</tr>
-<tr>
-  <td width='170px'  valign='top'>
-    <a  rel="lightbox" style="float: left; margin: 0 0 25px 0;" href="https://farm4.staticflickr.com/3693/9318896375_6b63665cdc.jpg">
-      <img rel="lightbox" src="http://farm8.staticflickr.com/7316/12161811483_ec59bf3a24_q.jpg" alt="" width="150" height="150" border="0" />
+     <a style="float: left; margin: 0 0 25px 0; border-bottom:none;" href="./research/TempoString/TempoString.html">
+      <img src="http://farm8.staticflickr.com/7316/12161811483_ec59bf3a24_q.jpg" alt="" width="150" height="150" border="0" />
     </a>
     
   </td>
   
   <td width='700px'  valign='top'>
-    <div class="projectname">TempoString: A Tangible Tool for Music Creation</div>
+    <div class="projectname"> <a href="./research/TempoString/TempoString.html"> TempoString: A Tangible Tool for Music Creation</a></div>
 	
 	<div class="info">Liang He, Guang Li, Yang Zhang, Danli Wang, Hongan Wang (UbiComp 2012)</div>
 	
     <p>TempoString is an easy-to-use tool which assists children with music creation. To create music with TempoString, children first choose timbre by putting selected one on a pallete and then poke on the canvas to draw the watercolor spots.
     During the play of the sound, children can interact with a rope to control the volume and the tone of it.
-
-    <div style="float: right">
-     <a href="./paper/TempoString.pdf"> Paper></a> &nbsp &nbsp &nbsp <a href="http://vimeo.com/47644545"> Video></a>
-    </div>
-    
     </p>
   </td>
 </tr>
@@ -250,15 +227,13 @@
 </tr>
 <tr>
   <td width='170px'  valign='top'>
-    <a  rel="lightbox[group5]" style="float: left; margin: 0 0 25px 0;" href="https://farm8.staticflickr.com/7385/9318791419_e055807858.jpg">
-      <img rel="lightbox" src="http://farm8.staticflickr.com/7404/12162235166_4043c27369_q.jpg" alt="" width="150" height="150" border="0" />
+    <a style="float: left; margin: 0 0 25px 0; border-bottom:none;" href="./research/E-Block/E-Block.html">
+      <img src="http://farm8.staticflickr.com/7404/12162235166_4043c27369_q.jpg" alt="" width="150" height="150" border="0" />
     </a>
-    <a rel="lightbox[group5]" href="https://farm6.staticflickr.com/5337/9321568950_aa537b23be.jpg"> </a>
-    
   </td>
   
   <td width='700px'  valign='top'>
-    <div class="projectname">E-Block: A Wireless/Infrared Tech Based Tangible Programming Tool for Children</div>
+    <div class="projectname"> <a href="./research/E-Block/E-Block.html">E-Block: A Wireless/Infrared Tech Based Tangible Programming Tool for Children</a></div>
 	
 	<div class="info">Danli Wang, Yang Zhang, Tianyuan Gu, Liang He, Hongan Wang (UIST 2012)</div>
 	
@@ -266,10 +241,6 @@
     In the programming stage, children find a path for the character to escape the maze.
     In the running stage, the character starts walking along the path programmed before.
     This project was further developed into <a href= "./paper/TanPro-Kit.pdf">TanPro-Kit</a>.
-
-    <div style="float: right">
-     <a href="./paper/E-Block.pdf"> Paper></a> &nbsp &nbsp &nbsp <a href="http://vimeo.com/47644742"> Video></a>
-    </div>
     </p>
   </td>
 </tr>
@@ -279,6 +250,72 @@
 ><div id="projects">
 <h2>Fun Projects</h2>
 
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+    <a style="float: left; margin: 0 0 25px 0; border-bottom:none;" href="./project/weddinggift/weddinggift.html">
+      <img src="./project/weddinggift/thumbnail.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname"> <a href="./project/weddinggift/weddinggift.html">Wedding gift for the guests</a></div>
+    <p>I made a chess set for the guests at my wedding. Each chess piece is 3D-printed with our names and the wedding date. The box is fabricated by a laser cutter, on which the pattern matches the decorations of the ceremony. One set takes roughly 60 hours to make but it totally worth it. When Zhuoshu was switching her dress, I hosted a lottery where five winners got the chess sets.
+
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+
+    <img style="float: left; margin: 0 0 25px 0;" rel="lightbox" src="./project/ring/1.jpg" alt="" width="150" height="150" border="0" />
+
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname"> Wedding bands </div>
+    <p> We made our wedding bands with a pattern of our heartbeats interleaved together. We first recorded our heartbeats with a mobile app. Then we tuned the smoothness of the waveforms and adjusted the phase difference between the two. The two bands are made of platinum.  
+    
+    </p>
+  </td>
+</tr>
+</table>
+
+
+<table width='900px' border='0' cellpadding='0' cellspacing='0' >
+<tr>
+  <td width='900px' colspan='3'  valign='top'></td>
+</tr>
+<tr>
+  <td width='170px'  valign='top'>
+    
+    <a style="float: left; margin: 0 0 25px 0; border-bottom:none;" href="./project/colormesh/colormesh.html">
+      <img src="./project/colormesh/thumbnail.jpg" alt="" width="150" height="150" border="0" />
+    </a>
+    
+  </td>
+  
+  <td width='700px'  valign='top'>
+    <div class="projectname"> <a href="./project/colormesh/colormesh.html">CNC Wood Painting</a></div>
+    <p>As a practice project for using the Shopbot downstairs, I cut a piece of wood which ended up a triangle mesh. I then painted it with acrylic paint diluted with a lot of water to not entirely cover the texture of wood. It is now on the wall of the lab.
+
+    </p>
+  </td>
+</tr>
+</table>
 
 
 <table width='900px' border='0' cellpadding='0' cellspacing='0' >
@@ -307,9 +344,6 @@
   </td>
 </tr>
 </table>
-
-
-
 
 <table width='900px' border='0' cellpadding='0' cellspacing='0' >
 <tr>
@@ -532,7 +566,7 @@
   <td width='700px'  valign='top'>
     <div class="projectname">Whisker and Face</div>
     <p>It's a mid-term project of Making Things Interactive class. In the exploration of materials, our device evolved from a paper-based mask to a solenoid-control silicon face.
-       When some one put their face close to the silicon face, it starts trembling. Then we get closer, it trembling harder and end up with a freeze with a expression of horror.
+       When someone bring their faces close to the silicon face, it starts trembling. Then we get closer, it trembling harder and end up with a freeze with a expression of horror.
       <div style="float: right">
      <a href="http://vimeo.com/76547312"> Video></a>
      </div>
@@ -619,8 +653,8 @@
 <div id="cmu-classes">
   <h2>CMU Classes</h2>
   <ul>
+	<li>10-807 Deep Learning (fall 2016)</li>
     <li>10-601 Machine Learning (spring 2016)&nbsp&nbsp&nbsp<a href = "http://yangz3.github.io">notes</a></li>
-    <li>15-410 Operating Systems (fall 2015)</li>   
  </ul> 
 
   <ul>
@@ -650,6 +684,15 @@
 <div id="footprint">
   <h2>Footprint</h2>
   <ul >
+  <li>Oct 20  Back in Pittsburgh.</li>	
+  <li>Oct 16  Attend UIST 2016 @ Tokyo, give AuraSense presentation.</li>	
+  <li>Oct 09  Talk about research and share experience living abroad with <a href= "http://dsd.future-lab.cn">ICMLL lab</a>.</li>	  
+  <li>Oct 06  Wonderful wedding ceremony with two families and friends at Beijing.</li>
+  <li>Sep 22  post-CHI party at Union Grill. Preparing for my wedding.</li>
+  <li>Aug 28  CHI 2017 projects final push.</li>
+  <li>Jun 26  Three lab papers got accepted at UIST 2016. Go FIGlab!</li>
+  <li>Jun 1  Summer projects for CHI 2017 are in full swing.</li>
+  <li>May 16  I got married!</li>
   <li>April 13  UIST 2016 Paper submitted. Fly to St. Louis for weekends.</li>
   <li>April 1  UIST 2016 in full swing. </li>
   <li>Mar 23  Qualcomm Innovation Fellowship finalist presentation and demo. </li>
@@ -665,6 +708,8 @@
   <li>Sep 12  CHI 2016 projects final push. </li>
   <li>Aug 31  First day as a PhD student. </li>
   <li>Aug 23  Summer project user study began. </li>
+  
+  <div id= "morePart" style= "display:none">
 
     <li>Aug 20  Tomo and Quantifying Electrostatic Haptic Feedback got accepted by UIST and ITS 2015. </li>
     <li>Jun 3  Summer projects in full swing. </li>
@@ -677,9 +722,6 @@
     <li>Jan 21  User test for the Fitts Law Project. 10 down, 10 to go! </li>
     <li>Jan 13  Back at Pittsburgh. </li>
     <li>Jan 5  V1.0 bio-impedance meter board is sent for printing. </li>
-
-    <div id= "morePart" style= "display:none">
-      
     <li>Dec 14  Went back home. Happy birthday mom! </li>
     <li>Oct 9  ACM UIST conference Student Innovation Contest 1st Most Creative Award for our project!</li>
     <li>Aug 22  Finished my internship at Kinoma, Marvell. </li>
