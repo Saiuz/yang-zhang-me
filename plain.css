@@ -83,7 +83,7 @@ h1 {
   border-bottom: 2px solid silver;
   color: gray;
   letter-spacing:  0px;
-  font-size: 20pt;
+  font-size: 30pt;
 }
 
 h2 {
@@ -346,9 +346,9 @@ div#toc a:visited { color: blue; }
 	border-bottom:none;
 	}
 
-.social-icons li a { color: #323232; border-bottom:none}
+.social-icons li a { color: #323232; border-bottom:none; cursor: pointer;}
 
-.social-icons li a:hover, .social-icons li a:focus { color: #DB522F } 
+.social-icons li a:hover, .social-icons li a:focus { color: #DB522F; cursor: pointer; } 
 
 .list-inline>li{display:inline-block;padding-right:5px;padding-left:5px;}
 
