@@ -1,3 +1,4 @@
+<!DOCTYPE html> 
 <html>
 	<head>
   
@@ -14,6 +15,10 @@
 	  
 	 
 	<script>
+		
+	  
+	
+	
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -23,24 +28,40 @@
 	  ga('send', 'pageview');
 	  
 	$(window).blur(function(){
-		$('#Electrick').get(0).pause();
-		$('#Tomo2').get(0).pause();
-		$('#AuraSense').get(0).pause();
-		$('#SkinTrack').get(0).pause();
-		$('#Tomo').get(0).pause();
-		$('#quantifyEV').get(0).pause();
-		$('#TempoString').get(0).pause();
-		$('#E-Block').get(0).pause();
+		for (var i = 0; i < media.length; i++){
+			$(media[i]).get(0).pause();
+		}
 	}).focus(function(){
-		$('#Electrick').get(0).play();
-		$('#Tomo2').get(0).play();
-		$('#AuraSense').get(0).play();
-		$('#SkinTrack').get(0).play();
-		$('#Tomo').get(0).play();
-		$('#quantifyEV').get(0).play();
-		$('#TempoString').get(0).play();
-		$('#E-Block').get(0).play();
+		for (var i = 0; i < media.length; i++){
+			$(media[i]).get(0).play();
+		}
 	});
+	
+	
+	$(document).ready(function() {
+	  			// Get media - with autoplay disabled (audio or video), no "var" makes it global
+		media = [$('#Electrick'),$('#SyntheticSensor'), $('#EMPhone'), $('#Tomo2'), $('#AuraSense'), $('#SkinTrack'), $('#Tomo'), $('#quantifyEV')]; 
+	            var tolerancePixel = 100;
+	            function checkMedia(){
+	                // Get current browser top and bottom
+	                var scrollTop = $(window).scrollTop() + tolerancePixel;
+	                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel; // has to specify document type with "<!DOCTYPE html>" for window.height to work properly 
+					
+					for (var i = 0; i < media.length; i++){
+	                    var yTopMedia = $(media[i]).offset().top;
+	                    var yBottomMedia = $(media[i]).height() + yTopMedia;
+					}
+						
+	                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+	                        $(media[i]).get(0).play();
+	                    } else {
+	                        $(media[i]).get(0).pause();
+	                    }
+					}
+	               
+	            }
+	            $(document).on('scroll', checkMedia);
+	        });
 
 	</script>
 		  
@@ -69,6 +90,7 @@
 <body>
 
 	<div id="iconbar"><</div>
+	
 	 <script>
 		$("#iconbar").load('template.html #iconbar');
 	 </script>
@@ -89,9 +111,6 @@
 		
 	</div>
 
-    <div style="float: right">
-    	<a href="./CV_YangZhang.pdf"> CV/Resume></a>
-    </div>
   </td>
   
 <td width = "60px">
@@ -116,7 +135,7 @@
 <tr valign="top">
   <td width='270px'  valign='top'>
 <div>
-	<video id = "Electrick" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	<video id = "Electrick" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
 </div>
@@ -161,7 +180,7 @@
 <tr valign="top">
   <td width='270px'  valign='top'>
 <div>
-	<video id = "SyntheticSensor" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	<video id = "SyntheticSensor" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
 </div>
@@ -206,7 +225,7 @@
 <tr valign="top">
   <td width='270px'  valign='top'>
 <div>
-	<video id = "EMPhone" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	<video id = "EMPhone" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
 </div>
@@ -251,7 +270,7 @@
 <tr valign="top">
   <td width='270px'  valign='top'>
 	  <div>
-	<video id = "Tomo2" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	<video id = "Tomo2" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
 </div>
@@ -296,7 +315,7 @@
 <tr valign="top">
   <td width='270px'>
 	  <div>
-	<video id = "AuraSense" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	<video id = "AuraSense" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
 </div>
@@ -340,7 +359,7 @@
 <tr valign="top">
   <td width='270px'>
 	  <div>
-	<video id = "SkinTrack" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	<video id = "SkinTrack" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
 </div>
@@ -383,7 +402,7 @@
 <tr valign="top">
   <td width='270px'>
 	  <div>
-	<video id = "Tomo" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+	<video id = "Tomo" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
 	  Your browser does not support the video tag.
 	</video>
 </div>
@@ -426,7 +445,7 @@
 <tr valign="top">
   <td width='270px'>
 	   <div>
-  	<video id = "quantifyEV" preload = "true" autoplay = "autoplay" loop = "loop" muted = "muted"  width = "260px">
+  	<video id = "quantifyEV" preload = "true" autoplay = "false" loop = "loop" muted = "muted"  width = "260px">
   	  Your browser does not support the video tag.
   	</video>
 	 <div>
