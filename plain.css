@@ -284,6 +284,8 @@ td.hlist2 {
   vertical-align: top;
 }
 
+
+
 @media print {
   div#footer-badges { display: none; }
 }
@@ -346,6 +348,7 @@ div#toc a:visited { color: blue; }
 	border-bottom:none;
 	}
 
+
 .social-icons li a { color: #323232; border-bottom:none; cursor: pointer;}
 
 .social-icons li a:hover, .social-icons li a:focus { color: #DB522F; cursor: pointer; } 
@@ -385,4 +388,10 @@ div#toc a:visited { color: blue; }
 	font-size: 15px;
 	color: #999;
 	line-height: 15px;
+}
+
+.fun-link, .portrait {
+  color:black;
+  text-decoration:none;
+  border-bottom:none;
 }
